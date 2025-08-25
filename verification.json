@@ -1,0 +1,112 @@
+{
+    "Daiwik": {
+      "Aadhar": {
+        "aadhar_number": "4187 3606 6510",
+        "name": "Daiwik",
+        "dob": "01/01/1990"
+      },
+      "10th Certificate": {
+        "roll_number": "20207238",
+        "name": "Daiwik",
+        "school_name": "ABC High School",
+        "passing_year": "2005",
+        "board": "CBSE"
+      },
+      "12th Certificate": {
+        "roll_number": "0987654321",
+        "name": "Daiwik",
+        "school_name": "XYZ Senior Secondary School",
+        "passing_year": "2007",
+        "board": "CBSE"
+      }
+    },
+    "A": {
+      "Aadhar": {
+        "aadhar_number": "2234 5678 9012",
+        "name": "A",
+        "dob": "02/02/1992",
+        "address": "456 Oak Avenue, City, Country"
+      },
+      "10th Certificate": {
+        "roll_number": "2234567890",
+        "name": "Jane Smith",
+        "school_name": "XYZ High School",
+        "passing_year": "2008",
+        "board": "ICSE"
+      },
+      "12th Certificate": {
+        "roll_number": "1987654321",
+        "name": "Jane Smith",
+        "school_name": "ABC Senior Secondary School",
+        "passing_year": "2010",
+        "board": "ICSE"
+      }
+    },
+    "Mark Johnson": {
+      "Aadhar": {
+        "aadhar_number": "3234 5678 9012",
+        "name": "Mark Johnson",
+        "dob": "03/03/1995",
+        "address": "789 Pine Road, City, Country"
+      },
+      "10th Certificate": {
+        "roll_number": "3234567890",
+        "name": "Mark Johnson",
+        "school_name": "LMN High School",
+        "passing_year": "2010",
+        "board": "CBSE"
+      },
+      "12th Certificate": {
+        "roll_number": "2987654321",
+        "name": "Mark Johnson",
+        "school_name": "XYZ Senior Secondary School",
+        "passing_year": "2012",
+        "board": "CBSE"
+      }
+    },
+    "Emma Brown": {
+      "Aadhar": {
+        "aadhar_number": "4234 5678 9012",
+        "name": "Emma Brown",
+        "dob": "04/04/1997",
+        "address": "101 Maple Lane, City, Country"
+      },
+      "10th Certificate": {
+        "roll_number": "4234567890",
+        "name": "Emma Brown",
+        "school_name": "OPQ High School",
+        "passing_year": "2012",
+        "board": "ICSE"
+      },
+      "12th Certificate": {
+        "roll_number": "3987654321",
+        "name": "Emma Brown",
+        "school_name": "PQR Senior Secondary School",
+        "passing_year": "2014",
+        "board": "ICSE"
+      }
+    },
+    "Lucas Green": {
+      "Aadhar": {
+        "aadhar_number": "5234 5678 9012",
+        "name": "Lucas Green",
+        "dob": "05/05/2000",
+        "address": "202 Birch Street, City, Country"
+      },
+      "10th Certificate": {
+        "roll_number": "5234567890",
+        "name": "Lucas Green",
+        "school_name": "RST High School",
+        "passing_year": "2015",
+        "board": "CBSE"
+      },
+      "12th Certificate": {
+        "roll_number": "4987654321",
+        "name": "Lucas Green",
+        "school_name": "STU Senior Secondary School",
+        "passing_year": "2017",
+        "board": "CBSE"
+      }
+    }
+  }
+  

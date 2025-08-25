@@ -1,0 +1,30 @@
+{
+    "1": {
+        "Document Type": "aadhar",
+        "Verification Status": "Aadhar Verified!"
+    },
+    "2": {
+        "Document Type": "10th_certificate",
+        "Verification Status": "10th Certificate Verified!"
+    },
+    "3": {
+        "Aadhar Number": "4187 3606 6510",
+        "Verification Status": "Aadhar Number Mismatch!"
+    },
+    "34": {
+        "Aadhar Number": "4187 3606 6510",
+        "Verification Status": "Aadhar Number Verified!"
+    },
+    "5": {
+        "Aadhar Number": "4187 3606 6510",
+        "Verification Status": "Aadhar Number Verified!"
+    },
+    "2345": {
+        "Document Type": "10th_certificate",
+        "Verification Status": "10th Certificate Verified!"
+    },
+    "24": {
+        "Document Type": "aadhar",
+        "Verification Status": "Verification Pending"
+    }
+}

@@ -1,0 +1,478 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            margin-top: 50px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        .back-btn {
+            display: block;
+            width: 100%;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f44336;
+            color: #fff;
+            text-align: center;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            text-decoration: none;
+        }
+
+        .back-btn:hover {
+            background-color: #e53935;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Application Verification Dashboard</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Application Number</th>
+                    <th>Document Type</th>
+                    <th>Verification Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for app_number, data in application_data.items() %}
+                    <tr>
+                        <td>{{ app_number }}</td>
+                        <td>{{ data['Document Type'] }}</td>
+                        <td>{{ data['Verification Status'] }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        <a href="/" class="back-btn">Back to Submit Application</a>
+    </div>
+</body>
+</html>
+ -->
+<!-- 
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Client Dashboard</title>
+     <style>
+         body {
+             font-family: Arial, sans-serif;
+             margin: 0;
+             padding: 0;
+             background-color: #f4f4f4;
+         }
+ 
+         .container {
+             width: 80%;
+             margin: 0 auto;
+             padding: 20px;
+             background-color: #ffffff;
+             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+             border-radius: 10px;
+             margin-top: 50px;
+         }
+ 
+         h1 {
+             text-align: center;
+             color: #333;
+         }
+ 
+         table {
+             width: 100%;
+             border-collapse: collapse;
+             margin-top: 20px;
+         }
+ 
+         th, td {
+             padding: 12px;
+             text-align: left;
+             border-bottom: 1px solid #ddd;
+         }
+ 
+         th {
+             background-color: #4CAF50;
+             color: white;
+         }
+ 
+         tr:hover {
+             background-color: #f1f1f1;
+         }
+ 
+         .status-verified {
+             color: green;
+             font-weight: bold;
+         }
+ 
+         .status-pending {
+             color: red;
+             font-weight: bold;
+         }
+ 
+         .back-btn {
+             display: inline-block;
+             margin-top: 20px;
+             padding: 10px 20px;
+             background-color: #f44336;
+             color: white;
+             text-decoration: none;
+             border-radius: 5px;
+         }
+ 
+         .back-btn:hover {
+             background-color: #e53935;
+         }
+ 
+         .visualize-btn {
+             display: inline-block;
+             margin-top: 20px;
+             padding: 10px 20px;
+             background-color: #2196F3;
+             color: white;
+             text-decoration: none;
+             border-radius: 5px;
+         }
+ 
+         .visualize-btn:hover {
+             background-color: #1E88E5;
+         }
+     </style>
+ </head>
+ <body>
+     <div class="container">
+         <h1>Application Verification Dashboard</h1>
+         <table>
+             <thead>
+                 <tr>
+                     <th>Application Number</th>
+                     <th>Document Type</th>
+                     <th>Verification Status</th>
+                 </tr>
+             </thead>
+             <tbody>
+                 {% for app_number, data in application_data.items() %}
+                     <tr>
+                         <td>{{ app_number }}</td>
+                         <td>{{ data['Document Type'] }}</td>
+                         <td class="{{ 'status-verified' if data['Verification Status'] != 'Verification Pending' else 'status-pending' }}">
+                             {{ data['Verification Status'] }}
+                         </td>
+                     </tr>
+                 {% endfor %}
+             </tbody>
+         </table>
+         <a href="/visualization" target="_blank" class="visualize-btn">View Verification Visualization</a>
+         <a href="/" class="back-btn">Back to Submit Application</a>
+     </div>
+ </body>
+ </html> -->
+<!-- 
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            margin-top: 50px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        .status-verified {
+            color: green;
+            font-weight: bold;
+        }
+
+        .status-pending {
+            color: red;
+            font-weight: bold;
+        }
+
+        .back-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #f44336;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .back-btn:hover {
+            background-color: #e53935;
+        }
+
+        .visualize-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #2196F3;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .visualize-btn:hover {
+            background-color: #1E88E5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Application Verification Dashboard</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Application Number</th>
+                    <th>Document Type</th>
+                    <th>Verification Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for app_number, data in application_data.items() %}
+                    <tr>
+                        <td>{{ app_number }}</td>
+                        <td>{{ data['Document Type'] }}</td>
+                        <td class="{{ 'status-verified' if data['Verification Status'] != 'Verification Pending' else 'status-pending' }}">
+                            {{ data['Verification Status'] }}
+                        </td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <a href="/visualization" target="_blank" class="visualize-btn">View Verification Visualization</a>
+        <a href="/" class="back-btn">Back to Submit Application</a>
+    </div>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            margin-top: 50px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        .status-verified {
+            color: green;
+            font-weight: bold;
+        }
+
+        .status-pending {
+            color: red;
+            font-weight: bold;
+        }
+
+        .back-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #f44336;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .back-btn:hover {
+            background-color: #e53935;
+        }
+
+        .visualize-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #2196F3;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .visualize-btn:hover {
+            background-color: #1E88E5;
+        }
+
+        .visualization {
+            margin-top: 20px;
+            display: none; /* Initially hidden */
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Application Verification Dashboard</h1>
+
+        {% if application_data %}
+        <table>
+            <thead>
+                <tr>
+                    <th>Application Number</th>
+                    <th>Document Type</th>
+                    <th>Verification Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for app_number, data in application_data.items() %}
+                    <tr>
+                        <td>{{ app_number }}</td>
+                        <td>{{ data['Document Type'] }}</td>
+                        <td class="{{ 'status-verified' if data['Verification Status'] != 'Verification Pending' else 'status-pending' }}">
+                            {{ data['Verification Status'] }}
+                        </td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        
+        <!-- Button to trigger visualization -->
+        <button class="visualize-btn" onclick="showVisualization()">View Verification Visualization</button>
+        
+        <!-- Visualization content will be loaded here after the button click -->
+        <div class="visualization" id="visualization-container">
+            <img src="data:image/png;base64,{{ visualization_image }}" alt="Verification Visualization" />
+        </div>
+        
+        {% else %}
+        <p>No applications available for display.</p>
+        {% endif %}
+        
+        <a href="/" class="back-btn">Back to Submit Application</a>
+    </div>
+
+    <script>
+        // Function to show the visualization after button click
+        function showVisualization() {
+            var visualizationContainer = document.getElementById('visualization-container');
+            visualizationContainer.style.display = 'block'; // Display the visualization
+        }
+    </script>
+</body>
+</html>
